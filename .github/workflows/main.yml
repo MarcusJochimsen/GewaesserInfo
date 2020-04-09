@@ -14,3 +14,4 @@ jobs:
         ftp-server: sftp://ssh.strato.de:22/
         ftp-username: sftp_gewaesserinfo@schattenfell.net
         ftp-password: ${{ secrets.FTP_PASSWORD }}
+        git-ftp-args: --insecure
