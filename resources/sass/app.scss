@@ -1,0 +1,23 @@
+@import "googleMaps";
+
+//@import "../../node_modules/bootstrap/scss/bootstrap";
+@import "../../node_modules/bootstrap/scss/_functions";
+@import "../../node_modules/bootstrap/scss/_variables";
+@import "../../node_modules/bootstrap/scss/_mixins";
+@import "../../node_modules/bootstrap/scss/_root";
+@import "../../node_modules/bootstrap/scss/utilities/_text";
+@import "../../node_modules/bootstrap/dist/css/bootstrap-grid.min.css";
+
+@import "../../node_modules/@fortawesome/fontawesome-free/css/all.css";
+
+.container {
+    max-width: 100% !important;
+}
+
+body {
+    &.footer_fixed {
+        .right_col {
+            margin-bottom: 49px !important;
+        }
+    }
+}
