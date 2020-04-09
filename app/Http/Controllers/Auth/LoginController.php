@@ -34,13 +34,11 @@ class LoginController extends Controller
      */
     public function __construct()
     {
-        if(!session()->has('url.intended'))
-        {
+        if (!session()->has('url.intended')) {
             session(['url.intended' => url()->previous()]);
         }
 
-        if(!property_exists($this, 'redirectTo'))
-        {
+        if (!property_exists($this, 'redirectTo')) {
             $this->redirectTo = url()->previous();
             session()->forget('url.intended');
         }

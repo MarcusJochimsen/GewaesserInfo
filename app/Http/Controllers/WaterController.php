@@ -85,7 +85,8 @@ class WaterController extends Controller
         );
 
         session()->flash(
-            'message', 'Das Gewässer wurde erstellt.'
+            'message',
+            'Das Gewässer wurde erstellt.'
         );
 
         return redirect('water');
@@ -156,7 +157,8 @@ class WaterController extends Controller
         );
 
         session()->flash(
-            'message', 'Das Gewässer wurde aktualisiert.'
+            'message',
+            'Das Gewässer wurde aktualisiert.'
         );
 
         return redirect('water/' . $water->id);
@@ -174,7 +176,8 @@ class WaterController extends Controller
         $water->delete();
 
         session()->flash(
-            'message', 'Das Gewässer wurde gelöscht.'
+            'message',
+            'Das Gewässer wurde gelöscht.'
         );
 
         return redirect('water');

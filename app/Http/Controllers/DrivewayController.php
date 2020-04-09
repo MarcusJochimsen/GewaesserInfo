@@ -63,7 +63,8 @@ class DrivewayController extends Controller
         );
 
         session()->flash(
-            'message', 'Die Zufahrt wurde erstellt.'
+            'message',
+            'Die Zufahrt wurde erstellt.'
         );
 
         return redirect('water/' . $water->id . '/driveway');
@@ -89,7 +90,7 @@ class DrivewayController extends Controller
      * @param Driveway $driveway
      * @return View
      */
-    public function edit(Water $water, Driveway $driveway):View
+    public function edit(Water $water, Driveway $driveway): View
     {
         return view('sites.driveway.edit')
             ->with('driveway', $driveway);
@@ -116,7 +117,8 @@ class DrivewayController extends Controller
         );
 
         session()->flash(
-            'message', 'Die Zufahrt wurde aktualisiert.'
+            'message',
+            'Die Zufahrt wurde aktualisiert.'
         );
 
         return redirect('water/' . $water->id . '/driveway/' . $driveway->id);
@@ -135,7 +137,8 @@ class DrivewayController extends Controller
         $driveway->delete();
 
         session()->flash(
-            'message', 'Die Zufahrt wurde gelöscht.'
+            'message',
+            'Die Zufahrt wurde gelöscht.'
         );
 
         return redirect('water/' . $water->id . '/driveway');

@@ -72,7 +72,8 @@ class UserController extends Controller
         );
 
         session()->flash(
-            'message', 'Deine Daten wurden aktualisiert.'
+            'message',
+            'Deine Daten wurden aktualisiert.'
         );
 
         return redirect('user');

@@ -60,7 +60,8 @@ class EntityController extends Controller
         );
 
         session()->flash(
-            'message', 'Die Organisation wurde erstellt.'
+            'message',
+            'Die Organisation wurde erstellt.'
         );
 
         return redirect('entity');
@@ -113,7 +114,8 @@ class EntityController extends Controller
         );
 
         session()->flash(
-            'message', 'Die Organisation wurde aktualisiert.'
+            'message',
+            'Die Organisation wurde aktualisiert.'
         );
 
         return redirect('entity/' . $entity->id);
@@ -131,7 +133,8 @@ class EntityController extends Controller
         $entity->delete();
 
         session()->flash(
-            'message', 'Die Organisation wurde gelöscht.'
+            'message',
+            'Die Organisation wurde gelöscht.'
         );
 
         return redirect('entity');

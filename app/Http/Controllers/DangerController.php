@@ -61,7 +61,8 @@ class DangerController extends Controller
         );
 
         session()->flash(
-            'message', 'Die Gefahrenstelle wurde erstellt.'
+            'message',
+            'Die Gefahrenstelle wurde erstellt.'
         );
 
         return redirect('water/' . $water->id . '/danger');
@@ -114,7 +115,8 @@ class DangerController extends Controller
         );
 
         session()->flash(
-            'message', 'Die Gefahrenstelle wurde aktualisiert.'
+            'message',
+            'Die Gefahrenstelle wurde aktualisiert.'
         );
 
         return redirect('water/' . $water->id . '/danger/' . $danger->id);
@@ -133,7 +135,8 @@ class DangerController extends Controller
         $danger->delete();
 
         session()->flash(
-            'message', 'Die Gefahrenstelle wurde gelöscht.'
+            'message',
+            'Die Gefahrenstelle wurde gelöscht.'
         );
 
         return redirect('water/' . $water->id . '/danger');
