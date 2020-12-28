@@ -2,17 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c2c70bd6-e9dd-48cb-a774-77e5cf3fe70f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/serverless.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2020_12_28_000000_alter_failed_jobs_table.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/gewaesserinfo.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gewaesserinfo.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Exceptions/Handler.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Exceptions/Handler.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Providers/RouteServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/RouteServiceProvider.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/mail.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/mail.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/session.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/session.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/factories/CurrentFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/CurrentFactory.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/factories/DangerFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/DangerFactory.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/factories/DivisionFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/DivisionFactory.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/factories/DrivewayFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/DrivewayFactory.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/factories/EntityFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/EntityFactory.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/factories/TideFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/TideFactory.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/factories/UserFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/UserFactory.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/factories/WaterFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/WaterFactory.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,7 +93,6 @@
     <include_path>
       <path value="$PROJECT_DIR$/vendor/ramsey/uuid" />
       <path value="$PROJECT_DIR$/vendor/phpoption/phpoption" />
-      <path value="$PROJECT_DIR$/vendor/phpunit/php-token-stream" />
       <path value="$PROJECT_DIR$/vendor/phpunit/php-text-template" />
       <path value="$PROJECT_DIR$/vendor/phpunit/php-timer" />
       <path value="$PROJECT_DIR$/vendor/phpunit/php-file-iterator" />
@@ -199,6 +205,18 @@
       <path value="$PROJECT_DIR$/vendor/symfony/polyfill-intl-grapheme" />
       <path value="$PROJECT_DIR$/vendor/symfony/polyfill-intl-normalizer" />
       <path value="$PROJECT_DIR$/vendor/laravel/ui" />
+      <path value="$PROJECT_DIR$/vendor/graham-campbell/result-type" />
+      <path value="$PROJECT_DIR$/vendor/ralouphie/getallheaders" />
+      <path value="$PROJECT_DIR$/vendor/guzzlehttp/guzzle" />
+      <path value="$PROJECT_DIR$/vendor/guzzlehttp/promises" />
+      <path value="$PROJECT_DIR$/vendor/guzzlehttp/psr7" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/php-invoker" />
+      <path value="$PROJECT_DIR$/vendor/psr/http-client" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/code-unit" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/cli-parser" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/complexity" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/lines-of-code" />
+      <path value="$PROJECT_DIR$/vendor/laravel/legacy-factories" />
     </include_path>
   </component>
   <component name="ProjectId" id="1T0z0JlkF9gsBTxQh0wTbTzhyk9" />
@@ -210,7 +228,7 @@
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="mariadb&#10;mysql" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../batteryManager" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/database/migrations" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -219,17 +237,17 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\marcu\development\projects\gewaesserinfo\public\fonts" />
-      <recent name="C:\Users\marcu\development\projects\gewaesserinfo\resources\views\sites\water" />
-      <recent name="C:\Users\marcu\development\projects\gewaesserinfo\resources\views\sites" />
-      <recent name="C:\Users\marcu\development\projects\gewaesserinfo\resources\views\sites\driveway" />
-      <recent name="C:\Users\marcu\development\projects\gewaesserinfo\database\migrations" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\marcu\development\projects\gewaesserinfo\resources\js" />
       <recent name="C:\Users\marcu\development\projects\gewaesserinfo\public\css" />
       <recent name="C:\Users\marcu\development\projects\gewaesserinfo\public\images" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\marcu\development\projects\GewaesserInfo\database\migrations" />
+      <recent name="C:\Users\marcu\development\projects\gewaesserinfo\public\fonts" />
+      <recent name="C:\Users\marcu\development\projects\gewaesserinfo\resources\views\sites\water" />
+      <recent name="C:\Users\marcu\development\projects\gewaesserinfo\resources\views\sites" />
+      <recent name="C:\Users\marcu\development\projects\gewaesserinfo\resources\views\sites\driveway" />
     </key>
   </component>
   <component name="RunManager">
@@ -276,7 +294,7 @@
       <workItem from="1595871936919" duration="1067000" />
       <workItem from="1596045445632" duration="627000" />
       <workItem from="1609089231185" duration="603000" />
-      <workItem from="1609172286131" duration="3406000" />
+      <workItem from="1609172286131" duration="6381000" />
     </task>
     <servers />
   </component>
@@ -305,13 +323,13 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="640" y="256" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/-1920.0.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1609176925724" />
-    <state x="668" y="237" width="583" height="566" key="find.popup" timestamp="1609177055085">
+    <state x="668" y="237" width="583" height="566" key="find.popup" timestamp="1609178374363">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="668" y="237" width="583" height="566" key="find.popup/-1920.0.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1609177055085" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1609175428457">
+    <state x="668" y="237" width="583" height="566" key="find.popup/-1920.0.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1609178374363" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1609184127289">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/-1920.0.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1609175428457" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/-1920.0.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1609184127289" />
   </component>
 </project>
